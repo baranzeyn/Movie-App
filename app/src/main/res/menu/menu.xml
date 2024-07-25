@@ -1,0 +1,19 @@
+<!-- res/menu/menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_explore"
+        android:icon="@drawable/btn_1"
+        android:title="Explore" />
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/btn_2"
+        android:title="Favorite" />
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/btn_3"
+        android:title="Cart" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/btn_4"
+        android:title="Profile" />
+</menu>

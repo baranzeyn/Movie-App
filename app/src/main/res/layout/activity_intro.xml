@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".Activities.IntroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivIntro"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/intro_pic"
+                app:layout_constraintDimensionRatio="H,4:5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:src="@drawable/gradient_bg"
+                app:layout_constraintBottom_toBottomOf="@id/ivIntro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvIntro1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Discover Your"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivIntro"
+                app:layout_constraintWidth_percent="0.88" />
+
+            <TextView
+                android:id="@+id/tvIntro2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Favorite show"
+                android:textColor="@color/orange"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="@id/tvIntro1"
+                app:layout_constraintStart_toStartOf="@id/tvIntro1"
+                app:layout_constraintTop_toBottomOf="@id/tvIntro1" />
+
+            <TextView
+                android:id="@+id/tvIntro3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Watch Now or Watch Later"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="@id/tvIntro1"
+                app:layout_constraintStart_toStartOf="@id/tvIntro1"
+                app:layout_constraintTop_toBottomOf="@id/tvIntro2" />
+
+            <TextView
+                android:id="@+id/tvIntro4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="In this tutorial, we'll guide you through the step-by-step process of building a movie Android app that will leave your users thrilled"
+                android:textColor="#9F9A9A"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/tvIntro1"
+                app:layout_constraintStart_toStartOf="@id/tvIntro1"
+                app:layout_constraintTop_toBottomOf="@id/tvIntro3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIntro"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/orange_button_bg"
+                android:text="Get Started"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tvIntro1"
+                app:layout_constraintStart_toStartOf="@id/tvIntro1"
+                app:layout_constraintTop_toBottomOf="@id/tvIntro4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
