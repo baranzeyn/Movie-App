@@ -3,8 +3,7 @@
     android:id="@+id/ivSlide"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:adjustViewBounds="false"
+    android:adjustViewBounds="true"
     android:minHeight="300dp"
     android:scaleType="centerCrop">
-
 </ImageView>
